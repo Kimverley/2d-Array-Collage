@@ -17,10 +17,11 @@ for (let i = 0; i < image.length; i++)
 
     html+="<tr>";
   for (let j = 0; j < image[i].length; j++) {
-    html+=`<td> <img src="/images/${image[i][j]}.png"></td>`;
+    html+=`<td> <img src="${image[i][j]}.png"></td>`;
    
   }
   html+="<tr>";
 }
 html+="</table>";
+
 collage.innerHTML = html;
